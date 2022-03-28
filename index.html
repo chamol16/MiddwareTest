@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1564ee1284.js" crossorigin="anonymous"></script>
+    <style>
+        hr {
+            height: 1px;
+            background-color: red;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="scroll-pokedex scrollbar">
+            <div class="force-overflow"></div>
+
+        </div>
+        <div class="pokemon-container">
+            <div class="pokemon-info">
+                <div class="left-container">
+
+                    <div id="api-img-container"></div>
+                    <div id="api-type-container">
+
+                        <div class="poke-name" id="poke-name"></div>
+                        <div class="types-container" id="types-container">
+                            <div class="type capital" id="type-one"></div>
+                            <div class="type capital" id="type-two"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="right-container" id="poke-info-container">
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="pokemon-info evolution-zone">
+                <div class="evolution-title-container">
+                    <h4>Evolution Chart</h4>
+                </div>
+
+                <div class="pokemon-changes-container">
+                    <div class="evolution-container" id="non-evolved"></div>
+                    <div class="evolution-container" id="evolution-1"></div>
+                    <div class="evolution-container" id="evolution-2"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="section search-section">
+
+        <div class="pokemon-found">
+
+            <div id="render-found">
+
+            </div>
+        </div>
+        <div class="pokemon-finder">
+
+            <div class="search-bar-container">
+                <i class="fa-solid fa-magnifying-glass other-icon-color"></i>
+                <input class="input-search" type="search" id="search-bar">
+            </div>
+
+            <div class="print-search-container">
+                <div class="printInfo-letf-container" id="local-img-container">
+                    img
+                </div>
+                <div id="poke-local-name">name</div>
+
+                <div class="printInfo-right-container"></div>
+            </div>
+
+            <hr>
+
+            <p> Evolution Chart div</p>
+        </div>
+    </section>
+
+    <script src="/app.js"></script>
+
+</body>
+
+</html>
